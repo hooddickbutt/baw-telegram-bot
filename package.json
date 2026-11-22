@@ -1,0 +1,19 @@
+{
+  "name": "baw-telegram-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Owner-only, read-only Telegram bot for Binance Agentic Wallet (baw CLI)",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/baw.js && node --check src/format.js && node --check src/qr.js && node --check src/selftest.js",
+    "selftest": "node src/selftest.js"
+  },
+  "dependencies": {
+    "grammy": "^1.38.3",
+    "qrcode": "^1.5.4"
+  }
+}
